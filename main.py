@@ -1,9 +1,7 @@
 import re
 import requests
 from typing import List
-
 from bs4 import BeautifulSoup
-
 
 def extract_time(expression: str) -> List[str]:
     return re.findall(r"\b(?:[0-1][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]\b", expression)
